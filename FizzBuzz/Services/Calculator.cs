@@ -1,6 +1,6 @@
-﻿namespace FizzBuss.Validators
+﻿namespace FizzBuzz.Services
 {
-    public class InputValidator
+    public class Calculator
     {
         public static bool IsDivisibleBy(int input, int divisibleBy)
         {

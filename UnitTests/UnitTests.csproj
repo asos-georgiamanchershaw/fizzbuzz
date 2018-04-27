@@ -46,17 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProgramShould.cs" />
+    <Compile Include="Services\CalculatorShould.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\FizzBuss\FizzBuzz.csproj">
-      <Project>{2B9B087E-ABF6-427C-82DE-6BB8C16D1F0E}</Project>
-      <Name>FizzBuzz</Name>
-    </ProjectReference>
+    <Compile Include="Services\FizzBuzzServiceShould.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FizzBuzz\FizzBuzz.csproj">
+      <Project>{2B9B087E-ABF6-427C-82DE-6BB8C16D1F0E}</Project>
+      <Name>FizzBuzz</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
