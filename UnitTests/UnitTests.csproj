@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Services\CalculatorShould.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\FizzBuzzServiceShould.cs" />
   </ItemGroup>
@@ -58,6 +57,9 @@
       <Project>{2B9B087E-ABF6-427C-82DE-6BB8C16D1F0E}</Project>
       <Name>FizzBuzz</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
