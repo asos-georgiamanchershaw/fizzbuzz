@@ -6,12 +6,12 @@ namespace UnitTests.Services
     [TestFixture]
     public class FizzBuzzServiceShould
     {
-        private FizzBuzzService _fizzBuzzService;
+        private FizzBuzzCalculator _fizzBuzzCalculator;
 
         [SetUp]
         public void Setup()
         {
-            _fizzBuzzService = new FizzBuzzService();
+            _fizzBuzzCalculator = new FizzBuzzCalculator();
         }
 
         [TestCase(3)]
@@ -20,7 +20,7 @@ namespace UnitTests.Services
         public void return_fizz_when_input_is_divisible_by_three(int input)
         {
             // Act
-            var textReturned = _fizzBuzzService.ProcessInput(input);
+            var textReturned = _fizzBuzzCalculator.GetValue(input);
 
             // Assert
             Assert.That(textReturned.Equals("Fizz"));
@@ -32,7 +32,7 @@ namespace UnitTests.Services
         public void return_buzz_when_input_is_divisible_by_five(int input)
         {
             // Act
-            var textReturned = _fizzBuzzService.ProcessInput(input);
+            var textReturned = _fizzBuzzCalculator.GetValue(input);
 
             // Assert
             Assert.That(textReturned.Equals("Buzz"));
@@ -44,7 +44,7 @@ namespace UnitTests.Services
         public void return_fizzbuzz_when_input_is_divisible_by_three_and_five(int input)
         {
             // Act
-            var textReturned = _fizzBuzzService.ProcessInput(input);
+            var textReturned = _fizzBuzzCalculator.GetValue(input);
 
             // Assert
             Assert.That(textReturned.Equals("FizzBuzz"));
@@ -56,7 +56,7 @@ namespace UnitTests.Services
         public void return_fizz_when_input_contains_three(int input)
         {
             // Act
-            var textReturned = _fizzBuzzService.ProcessInput(input);
+            var textReturned = _fizzBuzzCalculator.GetValue(input);
 
             // Assert
             Assert.That(textReturned.Equals("Fizz"));
@@ -68,7 +68,7 @@ namespace UnitTests.Services
         public void return_fizz_when_input_contains_five(int input)
         {
             // Act
-            var textReturned = _fizzBuzzService.ProcessInput(input);
+            var textReturned = _fizzBuzzCalculator.GetValue(input);
 
             // Assert
             Assert.That(textReturned.Equals("Buzz"));

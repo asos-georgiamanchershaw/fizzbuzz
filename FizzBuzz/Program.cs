@@ -7,11 +7,11 @@ namespace FizzBuzz
     {
         public static void Main(string[] args)
         {
-            var fizzBuzzService = new FizzBuzzService();
+            var fizzBuzzService = new FizzBuzzCalculator();
 
             for (int i = 1; i <= 1000; i++)
             {
-                var replacementText = fizzBuzzService.ProcessInput(i);
+                var replacementText = fizzBuzzService.GetValue(i);
                 Console.WriteLine(replacementText);
             }
             

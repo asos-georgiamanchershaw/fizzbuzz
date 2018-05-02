@@ -13,9 +13,7 @@
         }
 
         public static bool ContainsNumber(int input, int number)
-        {
-            // what happens for 35... contains 3, 5 and divisible by 5
-            
+        { 
             if (input.ToString().Contains(number.ToString()))
             {
                 return true;
