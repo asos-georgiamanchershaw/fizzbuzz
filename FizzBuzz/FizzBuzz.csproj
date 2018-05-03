@@ -44,7 +44,9 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\FizzBuzzBoomCalculator.cs" />
     <Compile Include="Services\FizzBuzzCalculator.cs" />
+    <Compile Include="Services\ICalculator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

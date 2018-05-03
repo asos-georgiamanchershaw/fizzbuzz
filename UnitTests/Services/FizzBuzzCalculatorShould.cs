@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace UnitTests.Services
 {
     [TestFixture]
-    public class FizzBuzzServiceShould
+    public class FizzBuzzCalculatorShould
     {
         private FizzBuzzCalculator _fizzBuzzCalculator;
 

@@ -1,6 +1,6 @@
 ﻿namespace FizzBuzz.Services
 {
-    public class FizzBuzzCalculator
+    public class FizzBuzzCalculator : ICalculator
     { 
         public string GetValue(int number)
         {
