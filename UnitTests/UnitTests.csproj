@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\FizzBuzzBoomBangCalculatorShould.cs" />
     <Compile Include="Services\FizzBuzzBoomCalculatorShould.cs" />
     <Compile Include="Services\FizzBuzzCalculatorShould.cs" />
   </ItemGroup>

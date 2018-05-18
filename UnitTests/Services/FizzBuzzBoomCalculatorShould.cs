@@ -6,12 +6,12 @@ namespace UnitTests.Services
     [TestFixture]
     public class FizzBuzzBoomCalculatorShould
     {
-        private FizzBuzzBoomCalculator _baseCalculator;
+        private FizzBuzzBoomCalculator _calculator;
 
         [SetUp]
         public void Setup()
         {
-            _baseCalculator = new FizzBuzzBoomCalculator(new FizzBuzzCalculator());
+            _calculator = new FizzBuzzBoomCalculator(new FizzBuzzCalculator());
         }
 
 
@@ -20,7 +20,7 @@ namespace UnitTests.Services
         [TestCase(91)]
         public void return_boom_when_number_contains_one_and_is_not_divisble_by_three_or_five(int number)
         {
-            var result = _baseCalculator.GetValue(number);
+            var result = _calculator.GetValue(number);
 
             Assert.That(result.Equals("Boom"));
         }

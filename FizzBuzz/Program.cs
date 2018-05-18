@@ -14,7 +14,7 @@ namespace FizzBuzz
                 var replacementText = fizzBuzzService.GetValue(i);
                 Console.WriteLine(replacementText);
             }
-            
+
             Console.ReadLine();
         }
     }

@@ -1,21 +1,21 @@
 ﻿namespace FizzBuzz.Services
 {
-    public class FizzBuzzBoomCalculator : ICalculator
+    public class FizzBuzzBoomBangCalculator : ICalculator
     {
         private ICalculator _calculator;
 
-        public FizzBuzzBoomCalculator(ICalculator calculator)
+        public FizzBuzzBoomBangCalculator(ICalculator calculator)
         {
             _calculator = calculator;
         }
 
         public string GetValue(int number)
         {
-            string result = _calculator.GetValue(number);
+            var result = _calculator.GetValue(number);
 
-            if (result.Contains("1"))
+            if (result.Contains("7"))
             {
-                return "Boom";
+                return "Bang";
             }
 
             return result;
